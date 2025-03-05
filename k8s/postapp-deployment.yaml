@@ -15,7 +15,7 @@ spec:
     spec:      
       containers:
         - name: post-container
-          image: jaechang13/postapp:v1
+          image: jaechang13/postapp:a9b3f20661fa919fe0c5f3afa02e05f71218fdb2
           ports:
             - containerPort: 8080
           
