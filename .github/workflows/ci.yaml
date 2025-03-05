@@ -71,3 +71,4 @@ jobs:      # 여러개의 작업을 정의할 수 있다.
           git add k8s/postapp-deployment.yaml gradlew
           git diff --quiet && git diff --staged --quiet || (git commit -m "Update image tag to ${{ github.sha }}" && git push https://${{ secrets.PAT }}@github.com/${{ github.repository }}.git HEAD:$(echo ${{ github.ref }} | sed 's/refs\/heads\///'))
 
+
